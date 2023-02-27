@@ -1,15 +1,14 @@
 "use strict"
 console.log("Javascript kører!")
 
-let fullname = fullname
 
 function buttonClick() {
-document.querySelector("button").addEventListener("click", showName)
+document.querySelector("button").addEventListener("click", showName())
 }
 
 function showName() { 
     document.querySelector("button onclick").removeClassList("hidden");
-    if (fullname = Palle) {
+    if (name = Palle) {
         niceName()
     }else if (fullname = Sarah) {
         okName()

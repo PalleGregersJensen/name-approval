@@ -3,12 +3,14 @@ console.log("Javascript kører!")
 
 
 function buttonClick() {
-document.querySelector("button").addEventListener("click", showName())
+document.querySelector("#button").addEventListener("click", showName())
 }
 
-function showName() { 
+
+function showName() {
+    console.log("vis navn")
     document.querySelector("button onclick").removeClassList("hidden");
-    if (name = Palle) {
+    if (fullname = Palle) {
         niceName()
     }else if (fullname = Sarah) {
         okName()

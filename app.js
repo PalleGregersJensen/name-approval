@@ -11,7 +11,8 @@ buttonClick();
 
  function showName() {
      console.log("vis navn")
-     document.querySelector("#niceName").removeClassList(hidden);
+   document.querySelector("#niceName").classList.remove("hidden");
+   document.querySelector("#niceName").classList.add("niceName");
     // if (name = Palle)
         // removeClassList("Hidden");
     // }else if (name = Sarah) {

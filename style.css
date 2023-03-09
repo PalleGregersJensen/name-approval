@@ -2,9 +2,10 @@ body{
     background-color: rgb(187, 214, 172);
     padding: 5%;
 }
-.hidden, 
-#niceName, 
-#okName,
-#badName {
+.hidden {
     display: none;
+}
+
+.niceName {
+    opacity: 1.0;
 }

@@ -3,36 +3,39 @@ window.addEventListener("load", start);
 
 console.log("Javascript kører!");
 
-
-
-// let firstName = input.value;
-// let lastName = "Hansen";
-
-// Nedenstående to måder kan man sætte variabler sammen på:
-// let fullName = `${firstName} ${lastName}`;
-// let fullName = firstName +" "+ lastName
-
-// console.log(fullName);
-
 function start() {
   console.log("startfunktion kører");
   document.querySelector("#myButton").addEventListener("click", showName);
 }
 
-//  buttonClick();
-
 function showName() {
   console.log("vis navn");
-  document.querySelector("#niceName").classList.remove("hidden");
-  if (document.querySelector("#input").value !== "Palle") {
-    document.querySelector("#badName").classList.remove("hidden");
-    document.querySelector("#niceName").classList.add("hidden");
+  document.querySelector("#badName").classList.remove("hidden");
+  if (document.querySelector("#input").value == "Palle") {
+    document.querySelector("#niceName").classList.remove("hidden");
+    document.querySelector("#badName").classList.add("hidden");
+  } else if (document.querySelector("#input").value == "Sarah") {
+    document.querySelector("#niceName").classList.remove("hidden");
+    document.querySelector("#badName").classList.add("hidden");
+  } else if (document.querySelector("#input").value == "Jakob") {
+    document.querySelector("#niceName").classList.remove("hidden");
+    document.querySelector("#badName").classList.add("hidden");
+  } else if (document.querySelector("#input").value == "Nikolaj") {
+    document.querySelector("#niceName").classList.remove("hidden");
+    document.querySelector("#badName").classList.add("hidden");
+  } else {
   }
+  startResetAll();
 }
-// removeClassList("Hidden");
-// }else if (name = ) {
-// }else if (name = ) {
-// }else if (name = ) {
-// } else {
-// }
 
+function startResetAll() {
+  console.log("Viderestil til nulstil navne");
+  document.querySelector("#resetButton").addEventListener("click", resetAll);
+}
+
+function resetAll() {
+  console.log("Nulstil navne");
+  document.querySelector("#badName").classList.add("hidden");
+  document.querySelector("#niceName").classList.add("hidden");
+  document.querySelector("#okName").classList.add("hidden");
+}
